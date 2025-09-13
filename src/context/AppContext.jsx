@@ -17,13 +17,16 @@ export default function AppContextProvider({ children }) {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             setPage(data.page);
             setTotalPages(data.totalPages);
             setPosts(data.posts);
 
         } catch (e) {
             console.log("something went wrong while fetching data");
+            setPage(1);
+            setPosts([]);
+            setTotalPages(null);
         }
         setLoading(false);
     }
