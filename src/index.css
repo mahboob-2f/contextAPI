@@ -1,7 +1,7 @@
 @import "tailwindcss";
 .spinner {
-   width: 56px;
-   height: 56px;
+   width: 106px;
+   height: 106px;
    border-radius: 50%;
    background: conic-gradient(#0000 10%,#474bff);
    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);

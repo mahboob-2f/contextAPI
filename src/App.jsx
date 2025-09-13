@@ -16,8 +16,9 @@ function App() {
     <>
       <div>
         <Header />
-        <div className="w-6/12 mx-auto mt-4  flex flex-col justify-between  items-start">
+        <div className="w-[45%] mx-auto mt-4    flex flex-col justify-between  items-start">
           <Blogs />
+          <hr className="font-bold text-black" /> 
           <Footer />
         </div>
 

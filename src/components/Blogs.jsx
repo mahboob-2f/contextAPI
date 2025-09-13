@@ -10,11 +10,11 @@ function Blogs(){
   // console.log(loading);
 
   return(
-    <div>
+    <div className='w-full mx-auto pt-4 space-y-4'>
       {
         loading ? (<Spinner/ >):(
           posts.length === 0 ? (
-            <div>
+            <div className='text-3xl font-bold font-serif'>
               no posts found
             </div>
           ):(
